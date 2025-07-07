@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://renart-case-backend-ferhatduran55s-projects.vercel.app/$1"
+    }
+  ]
+}
