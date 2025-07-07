@@ -1,0 +1,22 @@
+.ratingContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.stars {
+  display: flex;
+  gap: 0.01rem;
+}
+
+.ratingContainer div {
+    pointer-events: none;
+}
+
+.ratingText {
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 350;
+  margin-left: 0.2rem;
+}

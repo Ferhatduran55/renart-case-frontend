@@ -1,0 +1,154 @@
+.productsCarouselContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+@media (min-width: 768px) {
+  .productsCarouselContainer {
+    padding: 3rem 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .productsCarouselContainer {
+    padding: 3rem 6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .productsCarouselContainer {
+    padding: 3rem 8rem;
+  }
+}
+
+.productListTitle {
+  font-family: Avenir;
+  font-weight: 350;
+  font-size: 45px;
+  padding: 3.9rem 0 1.5rem 0;
+}
+
+.sliderButtonIcon {
+  transform: scale(2);
+}
+
+.sliderContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.sliderContainer > .keen-slider {
+  overflow: scroll !important;
+  overflow-y: hidden !important;
+}
+
+.sliderButton {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: unset;
+  z-index: 10;
+  top: 8rem;
+}
+
+.sliderButton:first-of-type {
+  left: -25px;
+}
+
+.sliderButton:last-of-type {
+  right: -25px;
+}
+
+.sliderButton svg {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  color: #333;
+}
+
+.productsCarousel {
+  overflow-x: scroll !important;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1.5rem;
+}
+
+.productsCarousel::-webkit-scrollbar {
+  height: 0.8rem;
+}
+
+.productsCarousel::-webkit-scrollbar-track {
+  background-color: #d8d8d8;
+  border-radius: 1rem;
+  box-shadow: inset 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+  padding: 0.1rem;
+}
+
+.productsCarousel::-webkit-scrollbar-thumb {
+  background-color: #b6b6b6;
+  border-radius: 1rem;
+}
+
+.productsCarousel::-webkit-scrollbar-thumb:hover {
+  background-color: #909090;
+}
+
+@media (max-width: 768px) {
+  .sliderContainer {
+    padding: 1rem 0;
+  }
+
+  .sliderButton {
+    width: 40px;
+    height: 40px;
+  }
+
+  .sliderButton:first-of-type {
+    left: -20px;
+  }
+
+  .sliderButton:last-of-type {
+    right: -20px;
+  }
+
+  .sliderButton svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .productsCarousel {
+    max-width: calc(100% - 100px);
+  }
+}
+
+@media (max-width: 480px) {
+  .sliderButton {
+    width: 35px;
+    height: 35px;
+  }
+
+  .sliderButton:first-of-type {
+    left: -17px;
+  }
+
+  .sliderButton:last-of-type {
+    right: -17px;
+  }
+
+  .sliderButton svg {
+    width: 14px;
+    height: 14px;
+  }
+}
